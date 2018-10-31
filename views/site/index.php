@@ -2,18 +2,26 @@
 use yii\bootstrap\Carousel;
 use yii\helpers\Html;
 use rmrevin\yii\fontawesome\FAS;
-
+use yii\widgets\Breadcrumbs;
 use edofre\sliderpro\models\Slide;
 use edofre\sliderpro\models\slides\Caption;
 use edofre\sliderpro\models\slides\Image;
 use edofre\sliderpro\models\slides\Layer;
 /* @var $this yii\web\View */
+use app\assets\AppAsset;
 
+AppAsset::register($this);
 $this->title = 'Torneo ATP250';
+$this->params['breadcrumbs'] = [];
+// echo Breadcrumbs::widget([
+//     'homeLink' => ['label' => 'Inicio',
+//     'url' => Yii::$app->getHomeUrl()],
+//     'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+// ]) 
+
 ?>
 
         <div class="jumbotron jumbo">
-
             <div class="row">
                 
                 <div class="col-lg-5 fotoJumbo ">
@@ -38,112 +46,113 @@ $this->title = 'Torneo ATP250';
                 </div>
   
         
-    <div class='col-lg-7'>
-        <?php
-            $slides = [
-                new Slide([
-                    'items' => [
-                        new Image(['src' => '/img/11.jpg']),
-                    ],
-                ]),
-                new Slide([
-                    'items' => [
-                        new Image(['src' => '/img/3.jpg']),
-                        new Layer(['tag' => 'h3', 'content' => 'Busque y vea información de cada jugador en detalle', 'htmlOptions' => 
-                            ['class' => 
-                                'sp-black sp-padding', 
-                                'data-width' => "400", 
-                                'data-horizontal' => "5%", 
-                                'data-position'=> "bottom",
-                                'data-vertical' => "5%", 
-                                'data-show-delay' => "500",
-                                'data-show-transition' => "up", 
-                                'data-hide-transition' => "down",
-                                'data-hide-delay' => "500",
-                                ]]),
-                    ],
-                ]),
-                new Slide([
-                    'items' => [
-                        new Image(['src' => '/img/4.jpg']),
-                        new Layer(['tag' => 'h4', 'content' => 'Vea los partidos en desarrollo', 'htmlOptions' => 
-                            ['class' => 
-                                'sp-white sp-padding', 
-                                'data-width' => "300", 
-                                'data-horizontal' => "2%", 
-                                'data-vertical' => "30%", 
-                                'data-show-delay' => "500",
-                                'data-show-transition' => "left", 
-                                'data-hide-transition' => "up",
-                                'data-hide-delay' => "400",
-                                ]]),
-                        new Layer(['tag' => 'h4', 'content' => 'Busque partidos previos', 'htmlOptions' => 
-                            ['class' => 
-                                'sp-white sp-padding', 
-                                'data-width' => "300", 
-                                'data-horizontal' => "4%", 
-                                'data-vertical' => "45%", 
-                                'data-show-delay' => "600",
-                                'data-show-transition' => "left", 
-                                'data-hide-transition' => "up",
-                                'data-hide-delay' => "500",
-                            ]]),
-                            new Layer(['tag' => 'h4', 'content' => 'Vea información completa de cada partido', 'htmlOptions' => 
-                            ['class' => 
-                                'sp-white sp-padding', 
-                                'data-width' => "300", 
-                                'data-horizontal' => "6%", 
-                                'data-vertical' => "60%", 
-                                'data-show-delay' => "700",
-                                'data-show-transition' => "left", 
-                                'data-hide-transition' => "up",
-                                'data-hide-delay' => "600",
-                            ]]),
-                    ],
-                ]),
-                new Slide([
-                    'items' => [
-                        new Image(['src' => '/img/10.jpg']),
-                        new Layer(['tag' => 'h4', 'content' => 'Visualice las canchas del predio', 'htmlOptions' => 
-                        ['class' => 
-                            'sp-black sp-padding', 
-                            'data-width' => "250", 
-                            'data-horizontal' => "5%", 
-                            'data-position'=> "top",
-                            'data-vertical' => "5%", 
-                            'data-show-delay' => "500",
-                            'data-show-transition' => "left", 
-                            'data-hide-transition' => "down",
-                            'data-hide-delay' => "500",
-                            ]]),
-                    ],
-                ]),
+                <div class='col-lg-7'>
+                    <?php
+                        $slides = [
+                            new Slide([
+                                'items' => [
+                                    new Image(['src' => '/img/11.jpg']),
+                                ],
+                            ]),
+                            new Slide([
+                                'items' => [
+                                    new Image(['src' => '/img/3.jpg']),
+                                    new Layer(['tag' => 'h3', 'content' => 'Busque y vea información de cada jugador en detalle', 'htmlOptions' => 
+                                        ['class' => 
+                                            'sp-black sp-padding', 
+                                            'data-width' => "400", 
+                                            'data-horizontal' => "5%", 
+                                            'data-position'=> "bottom",
+                                            'data-vertical' => "5%", 
+                                            'data-show-delay' => "500",
+                                            'data-show-transition' => "up", 
+                                            'data-hide-transition' => "down",
+                                            'data-hide-delay' => "500",
+                                            ]]),
+                                ],
+                            ]),
+                            new Slide([
+                                'items' => [
+                                    new Image(['src' => '/img/4.jpg']),
+                                    new Layer(['tag' => 'h4', 'content' => 'Vea los partidos en desarrollo', 'htmlOptions' => 
+                                        ['class' => 
+                                            'sp-white sp-padding', 
+                                            'data-width' => "300", 
+                                            'data-horizontal' => "2%", 
+                                            'data-vertical' => "30%", 
+                                            'data-show-delay' => "500",
+                                            'data-show-transition' => "left", 
+                                            'data-hide-transition' => "up",
+                                            'data-hide-delay' => "400",
+                                            ]]),
+                                    new Layer(['tag' => 'h4', 'content' => 'Busque partidos previos', 'htmlOptions' => 
+                                        ['class' => 
+                                            'sp-white sp-padding', 
+                                            'data-width' => "300", 
+                                            'data-horizontal' => "4%", 
+                                            'data-vertical' => "45%", 
+                                            'data-show-delay' => "600",
+                                            'data-show-transition' => "left", 
+                                            'data-hide-transition' => "up",
+                                            'data-hide-delay' => "500",
+                                        ]]),
+                                        new Layer(['tag' => 'h4', 'content' => 'Vea información completa de cada partido', 'htmlOptions' => 
+                                        ['class' => 
+                                            'sp-white sp-padding', 
+                                            'data-width' => "300", 
+                                            'data-horizontal' => "6%", 
+                                            'data-vertical' => "60%", 
+                                            'data-show-delay' => "700",
+                                            'data-show-transition' => "left", 
+                                            'data-hide-transition' => "up",
+                                            'data-hide-delay' => "600",
+                                        ]]),
+                                ],
+                            ]),
+                            new Slide([
+                                'items' => [
+                                    new Image(['src' => '/img/10.jpg']),
+                                    new Layer(['tag' => 'h4', 'content' => 'Visualice las canchas del predio', 'htmlOptions' => 
+                                    ['class' => 
+                                        'sp-black sp-padding', 
+                                        'data-width' => "250", 
+                                        'data-horizontal' => "5%", 
+                                        'data-position'=> "top",
+                                        'data-vertical' => "5%", 
+                                        'data-show-delay' => "500",
+                                        'data-show-transition' => "left", 
+                                        'data-hide-transition' => "down",
+                                        'data-hide-delay' => "500",
+                                        ]]),
+                                ],
+                            ]),
 
-            ];
+                        ];
 
-            ?>
+                        ?>
 
-            <?= \edofre\sliderpro\SliderPro::widget([
-                'id'            => 'my-slider',
-                'slides'        => $slides,
-                // 'thumbnails'    => $thumbnails,
-                'sliderOptions' => [
-                    'width'  => '100%',
-                    'height' => 500,
-                    'arrows' => true,
-                    'buttons'=> false,
-                    'waitForLayers'=> true,
-                    'init'   => new \yii\web\JsExpression("
-                        function() {
-                            console.log('slider is initialized');
-                        }
-                    "),
-                ],
-            ]);
-            ?>
+                        <?= \edofre\sliderpro\SliderPro::widget([
+                            'id'            => 'my-slider',
+                            'slides'        => $slides,
+                            // 'thumbnails'    => $thumbnails,
+                            'sliderOptions' => [
+                                'width'  => '100%',
+                                'height' => 500,
+                                'arrows' => true,
+                                'buttons'=> false,
+                                'waitForLayers'=> true,
+                                'init'   => new \yii\web\JsExpression("
+                                    function() {
+                                        console.log('slider is initialized');
+                                    }
+                                "),
+                            ],
+                        ]);
+                        ?>
+                    </div>
         </div>
-    </div>
 </div>
+
 
 <div id="tituloPartidos">
     <h3>Partidos actualmente en desarrollo</h3>

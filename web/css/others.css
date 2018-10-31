@@ -1,7 +1,7 @@
 html,
 body {
     height: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .wrap {
@@ -12,7 +12,13 @@ body {
 }
 
 .wrap > .container {
-    /* padding: 50px 15px 20px; */
+    padding: 50px 15px 20px;
+    margin-top: 20px;
+}
+
+.wrap > .contenedorListado{
+    padding: 0px 15px 20px;
+    margin-top: -45px;
 }
 
 .footer {
@@ -136,32 +142,8 @@ a.desc:after {
     padding-bottom: 0;
 }
 
-.textoJumbo{
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-top: 10px;
-    text-align: justify;
+.btnVer{
+    margin-left: 0;
+    margin-right: 0;
+    display: block;
 }
-
-.fotoJumbo{
-    text-align: center;
-}
-
-#logoATP {
-    width: 200px;
-}
-
-#logoBLTC{
-    width: 130px;
-    margin-top: 32px;
-}
-
-#tituloJumbo{
-    text-align: center;
-}
-
-#tituloPartidos{
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
