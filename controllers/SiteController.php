@@ -97,4 +97,8 @@ class SiteController extends Controller
     {
         return $this->render('cancha',['idCancha'=>$idCancha]);
     }
+
+    public function actionBuscarJugadores(){
+        return $this->render('buscarJugadores');
+    }
 }

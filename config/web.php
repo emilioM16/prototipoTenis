@@ -49,7 +49,9 @@ $config = [
             'rules' => [
                 '' => 'site/index',
                 'canchas'=>'site/canchas', 
-                'canchas/cancha'=>'site/cancha'
+                'canchas/cancha'=>'site/cancha',
+                'buscarJugadores'=> 'site/buscarJugadores',
+                'partidos'=> 'site/partidos',
             ],
         ],
     

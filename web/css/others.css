@@ -155,5 +155,10 @@ a.desc:after {
 }
 
 .headerCancha{
-    margin-top: -75px;
+    margin-top: -85px;
 }
+
+.headerUltimosPartidos{
+    margin-top: 0px;
+}
+

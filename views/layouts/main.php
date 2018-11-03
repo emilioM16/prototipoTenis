@@ -38,7 +38,7 @@ use yii\widgets\Breadcrumbs;
         'items' => [
             ['label' => 'Inicio', 'url' => ['/site/index']],
             ['label' => 'Canchas', 'url' => ['/site/canchas']],
-            ['label' => 'Buscar jugadores', 'url' => ['/site/buscarJugadores']],
+            ['label' => 'Buscar jugadores', 'url' => ['/site/buscar-jugadores']],
             ['label' => 'Buscar partidos', 'url' => ['/site/buscarPartidos']],
         ],
     ]);

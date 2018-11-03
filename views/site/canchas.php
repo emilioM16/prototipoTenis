@@ -69,7 +69,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
             <div class="col-sm-6 col-md-4 col-lg-3">
                 <div class="thumbnail">
-                        <img src="/img/cancha6.jpg" alt="...">
+                        <img src="/img/cancha3.jpg" alt="...">
                     <div class="caption">
                         <h4>Cancha N°3</h4>
                         <p><?php echo FAS::i('clock');?> Disponible de 9:00 a 12:00 </p>
@@ -78,7 +78,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         echo Html::a('Ver',
                             [
                               'cancha',
-                              'idCancha'=> 6,
+                              'idCancha'=> 3,
                             ],
                             [
                               'class'=>'btn btn-md btn-primary btnVer',
@@ -133,7 +133,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
             <div class="col-sm-6 col-md-4 col-lg-3">
                 <div class="thumbnail">
-                        <img src="/img/cancha3.jpg" alt="...">
+                        <img src="/img/cancha6.jpg" alt="...">
                     <div class="caption">
                         <h4>Cancha N°6</h4>
                         <p><?php echo FAS::i('clock');?> Disponible de 13:00 a 15:00 </p>
@@ -142,7 +142,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         echo Html::a('Ver',
                             [
                               'cancha',
-                              'idCancha'=>3,
+                              'idCancha'=>6,
                             ],
                             [
                               'class'=>'btn btn-md btn-primary btnVer',
