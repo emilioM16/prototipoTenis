@@ -167,6 +167,7 @@ $this->params['breadcrumbs'] = [];
                 <h3>Juan Martín Del Potro - Rafael Nadal</h3>
                 <p><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Resultado pacial: 6–1, 6–7 </p>
                 <p><?php echo FAS::i('table-tennis');?> Disputándose en la cancha N°4</p>
+                <p><?php echo FAS::i('users');?> Jueces: Andreas Egli, Anne Ullrich, Jake Garner, John Blom, Greg Allensworth</p>
                 <p><a href="#" class="btn btn-primary" role="button">Ver más</a></p>
             </div>
             </div>
@@ -177,6 +178,7 @@ $this->params['breadcrumbs'] = [];
                 <h3>Roger Federer - Stanislas Wawrinka</h3>
                 <p><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Resultado pacial: 4–6 </p>
                 <p><?php echo FAS::i('table-tennis');?> Disputándose en la cancha N°2</p>
+                <p><?php echo FAS::i('users');?> Jueces: Andreas Egli, Anne Ullrich, Jake Garner, John Blom, Greg Allensworth</p>
                 <p><a href="#" class="btn btn-primary" role="button">Ver más</a></p>
             </div>
             </div>
@@ -187,6 +189,7 @@ $this->params['breadcrumbs'] = [];
                 <h3>Guido Pella - Novak Djokovic</h3>
                 <p><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Resultado pacial: 5–7, 6–4 </p>
                 <p><?php echo FAS::i('table-tennis');?> Disputándose en la cancha N°1</p>
+                <p><?php echo FAS::i('users');?> Jueces: Andreas Egli, Anne Ullrich, Jake Garner, John Blom, Greg Allensworth</p>
                 <p><a href="#" class="btn btn-primary" role="button">Ver más</a></p>
             </div>
             </div>
@@ -197,6 +200,7 @@ $this->params['breadcrumbs'] = [];
                 <h3>Dominic Thiem - Marin Čilić</h3>
                 <p><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Resultado pacial: 2–6 </p>
                 <p><?php echo FAS::i('table-tennis');?> Disputándose en la cancha N°7</p>
+                <p><?php echo FAS::i('users');?> Jueces: Andreas Egli, Anne Ullrich, Jake Garner, John Blom, Greg Allensworth</p>
                 <p><a href="#" class="btn btn-primary" role="button">Ver más</a></p>
             </div>
             </div>

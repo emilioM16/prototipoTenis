@@ -93,8 +93,8 @@ class SiteController extends Controller
         return $this->render('canchas');
     }
 
-    public function actionCancha()
+    public function actionCancha($idCancha)
     {
-        return $this->render('cancha');
+        return $this->render('cancha',['idCancha'=>$idCancha]);
     }
 }

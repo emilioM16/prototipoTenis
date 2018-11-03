@@ -147,3 +147,13 @@ a.desc:after {
     margin-right: 0;
     display: block;
 }
+
+.jumboCancha{
+    /* background-image: url('/img/cancha1.jpg'); */
+    background-size: cover;
+    /* margin-top: -70px; */
+}
+
+.headerCancha{
+    margin-top: -75px;
+}

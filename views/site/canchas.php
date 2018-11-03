@@ -36,6 +36,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         echo Html::a('Ver',
                             [
                               'cancha',
+                              'idCancha'=> 1,
                             ],
                             [
                               'class'=>'btn btn-md btn-primary btnVer',
@@ -56,6 +57,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         echo Html::a('Ver',
                             [
                               'cancha',
+                              'idCancha'=> 2,
                             ],
                             [
                               'class'=>'btn btn-md btn-primary btnVer',
@@ -76,6 +78,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         echo Html::a('Ver',
                             [
                               'cancha',
+                              'idCancha'=> 6,
                             ],
                             [
                               'class'=>'btn btn-md btn-primary btnVer',
@@ -96,6 +99,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         echo Html::a('Ver',
                             [
                               'cancha',
+                              'idCancha'=>4,
                             ],
                             [
                               'class'=>'btn btn-md btn-primary btnVer',
@@ -117,6 +121,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         echo Html::a('Ver',
                             [
                               'cancha',
+                              'idCancha'=>5,
                             ],
                             [
                               'class'=>'btn btn-md btn-primary btnVer',
@@ -137,6 +142,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         echo Html::a('Ver',
                             [
                               'cancha',
+                              'idCancha'=>3,
                             ],
                             [
                               'class'=>'btn btn-md btn-primary btnVer',
