@@ -98,7 +98,17 @@ class SiteController extends Controller
         return $this->render('cancha',['idCancha'=>$idCancha]);
     }
 
-    public function actionBuscarJugadores(){
-        return $this->render('buscarJugadores');
+    public function actionJugadores(){
+        return $this->render('jugadores');
+    }
+
+    public function actionBuscarPartidos(){
+        return $this->render('buscarPartidos');
+    }
+
+    function actionShowmodal(){
+        $js='$("#modal").modal("show")';
+        $this->getView()->registerJs($js);        
+        return $this->render('index');
     }
 }
