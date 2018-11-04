@@ -102,6 +102,19 @@ class SiteController extends Controller
         return $this->render('jugadores');
     }
 
+    public function actionJugador($idJugador, $nombre, $ranking, $pais, $ciudad, $nroPre, $fechaNac){
+        return $this->render('jugador',
+            [
+                'idJugador'=>$idJugador, 
+                'nombre'=>$nombre, 
+                'ranking'=>$ranking, 
+                'pais'=>$pais,
+                'ciudad'=>$ciudad,
+                'fechaNac'=>$fechaNac,
+                'nroPre'=>$nroPre
+            ]);
+    }
+
     public function actionBuscarPartidos(){
         return $this->render('buscarPartidos');
     }
