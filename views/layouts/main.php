@@ -21,9 +21,12 @@ use rmrevin\yii\fontawesome\FAS;
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
+    
 </head>
 <body>
 <?php $this->beginBody();
+
+$this->registerLinkTag(['rel' => 'icon', 'type' => 'image/png', 'href' => 'img/logoAtpSimple.png']);
 
 Modal::begin([
 
@@ -319,6 +322,57 @@ Modal::begin([
 
 Modal::end();
 
+Modal::begin([
+
+	'header'=>'<h4 align="center">Buscar partidos</h4>',
+
+	'id'=>'modalPartido',
+
+	'size'=>'modal-md',
+
+]);
+
+echo "<div class='row'>
+<div class='col-lg-8 col-lg-offset-2'>
+    <p align='justify'>".FAS::i('info')." Puede realizar la búsqueda de partidos por <b>uno</b> de los siguientes criterios.</p>
+    <div class='panel panel-primary'>
+        <div class='panel-body'>
+            <form>
+                <div class='form-group'>
+                    <label for='exampleInputEmail1'>Nombre y apellido </label>
+                    <input type='email' class='form-control' id='exampleInputEmail1' placeholder='Nombre y apellido...'>
+                </div>
+                <div class='form-group'>
+                    <label for='exampleInputPassword1'> Fecha </label>
+                    <input type='date' min='0' class='form-control' id='exampleInputPassword1' placeholder='Fecha'>
+                </div>
+                <div class='form-group'>
+                    <label for='exampleInputPassword1'> Instancia </label>
+                    <select class='form-control'>
+                        <option value='' selected> </option>
+                        <option value=''> Primera ronda </option>
+                        <option value=''> Octavos de final </option>
+                        <option value=''> Cuartos de final </option>
+                        <option value=''> Semifinal</option>
+                        <option value=''> Final </option>
+                    </select>
+                </div>                
+                ".
+                Html::a(FAS::i('search').' Buscar',
+                   [
+                   'partidos',
+                   ],
+                   [
+                   'class'=>'btn btn-md btn-primary btn-block',
+                   ])
+               ."
+            </form></div>
+        </div>
+    </div>
+</div>";
+
+Modal::end();
+
 ?>
 
 <div class='wrap'>
@@ -336,7 +390,7 @@ Modal::end();
             ['label' => 'Inicio', 'url' => ['/site/index']],
             ['label' => 'Canchas', 'url' => ['/site/canchas']],
             '<li><a data-toggle="modal" data-target="#modal" style="cursor: pointer;">Buscar jugadores</a></li>',
-            ['label' => 'Buscar partidos', 'url' => ['/site/buscar-partidos']],
+            '<li><a data-toggle="modal" data-target="#modalPartido" style="cursor: pointer;">Buscar partidos</a></li>',
 
         ],
     ]);

@@ -102,6 +102,11 @@ class SiteController extends Controller
         return $this->render('jugadores');
     }
 
+    public function actionPartidos(){
+        return $this->render('partidos');
+    }
+
+
     public function actionJugador($idJugador, $nombre, $ranking, $pais, $ciudad, $nroPre, $fechaNac){
         return $this->render('jugador',
             [
@@ -119,9 +124,5 @@ class SiteController extends Controller
         return $this->render('buscarPartidos');
     }
 
-    function actionShowmodal(){
-        $js='$("#modal").modal("show")';
-        $this->getView()->registerJs($js);        
-        return $this->render('index');
-    }
+
 }
