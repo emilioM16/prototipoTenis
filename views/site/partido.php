@@ -84,7 +84,23 @@ $this->params['breadcrumbs'][] = $this->title;
                         </h1>
                     </div>
                     <div class="row">
-                        <img src="img/<?= $j1 ?>.png" alt="..." class="img-rounded">
+                        <?php
+                            echo Html::a('<img src="img/'.$j1.'.png" alt="..." class="img-rounded">',
+                                [
+                                'jugador',
+                                'idJugador'=> 1,
+                                'nombre'=>'Juan Martín Del Potro',
+                                'ranking'=>'2',
+                                'nroPre'=>'4',
+                                'fechaNac'=> '23 de septiembre de 1988',
+                                'ciudad'=>'Tandil',
+                                'pais'=> 'Argentina'
+                                ],
+                                [
+                                'class'=>'',
+                            ]);
+                        ?>
+                        
                     </div>
                 </div>
                 <div class="col-lg-2 vs">
@@ -112,7 +128,22 @@ $this->params['breadcrumbs'][] = $this->title;
                             </h1>
                         </div>
                         <div class="row">
-                            <img src="img/<?= $j2 ?>.png" alt="..." class="img-rounded">
+                            <?php
+                                    echo Html::a('<img src="img/'.$j2.'.png" alt="..." class="img-rounded">',
+                                    [
+                                    'jugador',
+                                    'idJugador'=> 1,
+                                    'nombre'=>'Stanislas Wawrinka',
+                                    'ranking'=>'2',
+                                    'nroPre'=>'4',
+                                    'fechaNac'=> '23 de septiembre de 1988',
+                                    'ciudad'=>'Tandil',
+                                    'pais'=> 'Argentina'
+                                    ],
+                                    [
+                                    'class'=>'',
+                                    ]);
+                                ?>
                         </div>
                     </div>
                 </div>
@@ -125,6 +156,26 @@ $this->params['breadcrumbs'][] = $this->title;
                     <p><?php echo FAS::i('calendar-alt'). ' <b>Fecha:</b> '.$fecha ?></p>
                     <p><?php echo FAS::i('clock'). ' <b>Hora de inicio:</b> '.$horaInicio ?></p>
                     <p><?php echo FAS::i('clock'). ' <b>Hora de finalización:</b> '.$horaFin ?></p>
+                    <p>
+                        <?php 
+                            echo FAS::i('table-tennis'); 
+                            echo ' <b>Disputado en la cancha N°1</b> (';
+                            echo Html::a('Ver información',
+                                [
+                                  'cancha',
+                                  'idCancha'=> 1,
+                                ],
+                                [
+                                  'class'=>'',
+                                ]);
+                                
+                        ?>)
+                    </p>
+                    <p>
+                        <?php 
+                            echo FAS::i('user').' <b>Juez de silla: </b> ' 
+                        ?>
+                    </p>
                     <p><?php echo FAS::i('chart-line').' <b>Resultado:</b> '.$resu ?></p>
                     <p><?php echo FAS::i('chart-line').' <b>Instancia:</b> '.$instancia ?></p>
 

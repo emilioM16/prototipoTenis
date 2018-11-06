@@ -115,7 +115,7 @@ class SiteController extends Controller
                 'horaInicio'=> $horaInicio,
                 'horaFin'=> $horaFin,
                 'resu'=> $resu,
-                'instancia'=> $instancia
+                'instancia'=> $instancia,
             ]);
     }
 
