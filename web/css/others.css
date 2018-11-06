@@ -166,3 +166,8 @@ a.desc:after {
     width: 100%;
     height: 210px;
 }
+
+.btnPartido{
+    margin-top: 10px;
+    width: 40%;
+}
