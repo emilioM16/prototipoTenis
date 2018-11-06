@@ -53,6 +53,8 @@ $config = [
                 'buscarJugadores'=> 'site/buscarJugadores',
                 'jugadores'=>'site/jugadores',
                 'partidos'=> 'site/partidos',
+                'jugador'=> 'site/jugador',
+                'partido'=> 'site/partido'
             ],
         ],
     

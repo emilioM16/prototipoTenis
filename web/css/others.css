@@ -171,3 +171,13 @@ a.desc:after {
     margin-top: 10px;
     width: 40%;
 }
+
+.imagenJugadorPartido{
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-bottom: 30px;
+}
+
+.vs {
+    margin-top: 150px;
+}

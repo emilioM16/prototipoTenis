@@ -106,6 +106,19 @@ class SiteController extends Controller
         return $this->render('partidos');
     }
 
+    public function actionPartido($j1,$j2,$fecha,$horaInicio,$horaFin,$resu, $instancia){
+        return $this->render('partido',
+            [
+                'j1'=>$j1,
+                'j2'=>$j2,
+                'fecha'=>$fecha,
+                'horaInicio'=> $horaInicio,
+                'horaFin'=> $horaFin,
+                'resu'=> $resu,
+                'instancia'=> $instancia
+            ]);
+    }
+
 
     public function actionJugador($idJugador, $nombre, $ranking, $pais, $ciudad, $nroPre, $fechaNac){
         return $this->render('jugador',
