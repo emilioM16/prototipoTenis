@@ -26,7 +26,7 @@ use rmrevin\yii\fontawesome\FAS;
 <body>
 <?php $this->beginBody();
 
-$this->registerLinkTag(['rel' => 'icon', 'type' => 'image/png', 'href' => 'img/logoAtpSimple.png']);
+$this->registerLinkTag(['rel' => 'icon', 'type' => 'image/png', 'href' => '/img/logoAtpSimple.png']);
 
 Modal::begin([
 

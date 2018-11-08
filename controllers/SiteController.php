@@ -141,5 +141,16 @@ class SiteController extends Controller
         return $this->render('juez');
     }
 
-
+    public function actionPartidoEnDesarrollo($j1,$j2,$fecha,$horaInicio,$horaFin,$resu, $instancia){
+        return $this->render('partidoEnDesarrollo',
+            [
+                'j1'=>$j1,
+                'j2'=>$j2,
+                'fecha'=>$fecha,
+                'horaInicio'=> $horaInicio,
+                'horaFin'=> $horaFin,
+                'resu'=> $resu,
+                'instancia'=> $instancia,
+            ]);
+    }
 }

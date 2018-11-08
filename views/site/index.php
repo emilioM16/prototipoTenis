@@ -170,7 +170,24 @@ $this->params['breadcrumbs'] = [];
                 <p><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Resultado pacial: 6–1, 6–7 </p>
                 <p><?php echo FAS::i('table-tennis');?> Disputándose en la cancha N°4</p>
                 <p><?php echo FAS::i('users');?> Jueces: Andreas Egli, Anne Ullrich, Jake Garner, John Blom, Greg Allensworth</p>
-                <p><a href="#" class="btn btn-primary" role="button">Ver más</a></p>
+                <p>
+                    <?php 
+                        echo Html::a('Ver más',
+                            [
+                            'partido-en-desarrollo',
+                            'j1'=> 'Juan Martín Del Potro',
+                            'j2'=> 'Rafael Nadal',
+                            'fecha'=> '14/11/2018',
+                            'horaInicio'=> '10:00',
+                            'horaFin'=>'13:00',
+                            'resu'=>'6–1, 6–7',
+                            'instancia'=> 'Semifinal'
+                            ],
+                            [
+                            'class'=>'btn btn-md btn-primary',
+                            ]);
+                    ?> 
+                </p>
             </div>
             </div>
         </div>
@@ -181,7 +198,24 @@ $this->params['breadcrumbs'] = [];
                 <p><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Resultado pacial: 4–6 </p>
                 <p><?php echo FAS::i('table-tennis');?> Disputándose en la cancha N°2</p>
                 <p><?php echo FAS::i('users');?> Jueces: Andreas Egli, Anne Ullrich, Jake Garner, John Blom, Greg Allensworth</p>
-                <p><a href="#" class="btn btn-primary" role="button">Ver más</a></p>
+                <p>
+                    <?php 
+                        echo Html::a('Ver más',
+                            [
+                            'partido-en-desarrollo',
+                            'j1'=> 'Juan Martín Del Potro',
+                            'j2'=> 'Rafael Nadal',
+                            'fecha'=> '14/11/2018',
+                            'horaInicio'=> '10:00',
+                            'horaFin'=>'13:00',
+                            'resu'=>'6–1, 6–7',
+                            'instancia'=> 'Semifinal'
+                            ],
+                            [
+                            'class'=>'btn btn-md btn-primary',
+                            ]);
+                    ?> 
+                </p>
             </div>
             </div>
         </div>
@@ -192,7 +226,24 @@ $this->params['breadcrumbs'] = [];
                 <p><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Resultado pacial: 5–7, 6–4 </p>
                 <p><?php echo FAS::i('table-tennis');?> Disputándose en la cancha N°1</p>
                 <p><?php echo FAS::i('users');?> Jueces: Andreas Egli, Anne Ullrich, Jake Garner, John Blom, Greg Allensworth</p>
-                <p><a href="#" class="btn btn-primary" role="button">Ver más</a></p>
+                <p>
+                    <?php 
+                        echo Html::a('Ver más',
+                            [
+                            'partido-en-desarrollo',
+                            'j1'=> 'Juan Martín Del Potro',
+                            'j2'=> 'Rafael Nadal',
+                            'fecha'=> '14/11/2018',
+                            'horaInicio'=> '10:00',
+                            'horaFin'=>'13:00',
+                            'resu'=>'6–1, 6–7',
+                            'instancia'=> 'Semifinal'
+                            ],
+                            [
+                            'class'=>'btn btn-md btn-primary',
+                            ]);
+                    ?> 
+                </p>
             </div>
             </div>
         </div>
@@ -203,7 +254,24 @@ $this->params['breadcrumbs'] = [];
                 <p><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Resultado pacial: 2–6 </p>
                 <p><?php echo FAS::i('table-tennis');?> Disputándose en la cancha N°7</p>
                 <p><?php echo FAS::i('users');?> Jueces: Andreas Egli, Anne Ullrich, Jake Garner, John Blom, Greg Allensworth</p>
-                <p><a href="#" class="btn btn-primary" role="button">Ver más</a></p>
+                <p>
+                    <?php 
+                        echo Html::a('Ver más',
+                            [
+                            'partido-en-desarrollo',
+                            'j1'=> 'Juan Martín Del Potro',
+                            'j2'=> 'Rafael Nadal',
+                            'fecha'=> '14/11/2018',
+                            'horaInicio'=> '10:00',
+                            'horaFin'=>'13:00',
+                            'resu'=>'6–1, 6–7',
+                            'instancia'=> 'Semifinal'
+                            ],
+                            [
+                            'class'=>'btn btn-md btn-primary',
+                            ]);
+                    ?> 
+                </p>
             </div>
             </div>
         </div>

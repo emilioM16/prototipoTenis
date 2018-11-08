@@ -13,7 +13,7 @@ OthersAsset::register($this);
 <div class="container">
 
 <?php
-$this->title = $j1.' vs. '.$j2;
+$this->title = $j1.' vs. '.$j2.' (en curso)' ;
 $this->params['breadcrumbs'][] = ['label' => 'Partidos', 'url' => ['partidos']];
 $this->params['breadcrumbs'][] = $this->title;
 
@@ -165,11 +165,11 @@ $this->params['breadcrumbs'][] = $this->title;
                             <img src="/img/multimedia1.jpg" alt="...">
                         </div>
                         <div class="item">
-                            <img src="/img/multimedia2.jpg" alt="...">
+                            <img src="/img/multimedia3.jpg" alt="...">
                         </div>
                         <div class="item">
                             <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/85u0eDQ_T4k"></iframe>
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2oG_KeEqMdE"></iframe>
                             </div>
                         </div>
                     </div>
@@ -194,7 +194,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     <p>
                         <?php 
                             echo FAS::i('table-tennis'); 
-                            echo ' <b>Disputado en la cancha N°1</b> (';
+                            echo ' <b>Disputándose en la cancha N°4</b> (';
                             echo Html::a('Ver información de la cancha',
                                 [
                                   'cancha',
@@ -220,7 +220,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                 
                         ?>
                     </p>
-                    <p><?php echo FAS::i('chart-line').' <b>Resultado:</b> '.$resu ?></p>
+                    <p><?php echo FAS::i('chart-line').' <b>Resultado parcial:</b> '.$resu ?></p>
                     <p><?php echo FAS::i('chart-line').' <b>Instancia:</b> '.$instancia ?></p>
 
                 </div>

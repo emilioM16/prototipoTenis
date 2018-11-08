@@ -75,13 +75,17 @@ $this->params['breadcrumbs'][] = $this->title;
                                 <?php 
                                     echo Html::a(FAS::i('eye'),
                                     [
-                                    'partido',
-                                    ],
-                                    [
-                                    'class'=>'btn btn-primary',
-                                    'data-toggle'=> 'tooltip',
-                                    'data-placement'=> 'left',
-                                    'title'=> 'Ver',
+                                        'partido',
+                                        'j1'=> 'Juan Martín Del Potro',
+                                        'j2'=> 'Roger Federer',
+                                        'fecha'=> '15/03/2018',
+                                        'horaInicio'=> '10:00',
+                                        'horaFin'=>'13:00',
+                                        'resu'=>'6-4, 7-6(0)',
+                                        'instancia'=> 'Semifinal'
+                                        ],
+                                        [
+                                        'class'=>'btn  btn-primary',
                                     ]);
                                 ?>  
                             </td>
@@ -119,13 +123,17 @@ $this->params['breadcrumbs'][] = $this->title;
                                 <?php 
                                     echo Html::a(FAS::i('eye'),
                                     [
-                                    'partido',
-                                    ],
-                                    [
-                                    'class'=>'btn btn-primary',
-                                    'data-toggle'=> 'tooltip',
-                                    'data-placement'=> 'left',
-                                    'title'=> 'Ver',
+                                        'partido',
+                                        'j1'=> 'Juan Martín Del Potro',
+                                        'j2'=> 'Roger Federer',
+                                        'fecha'=> '15/03/2018',
+                                        'horaInicio'=> '10:00',
+                                        'horaFin'=>'13:00',
+                                        'resu'=>'6-4, 7-6(0)',
+                                        'instancia'=> 'Semifinal'
+                                        ],
+                                        [
+                                        'class'=>'btn  btn-primary',
                                     ]);
                                 ?>  
                             </td>
