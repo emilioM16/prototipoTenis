@@ -378,19 +378,20 @@ Modal::end();
 <div class='wrap'>
     <?php
     NavBar::begin([
-        'brandLabel' => '<div><img src="img/logoBLTC.png" class="logoNavbar"><img src="img/logoAtpFondo.png" class="logoNavbarAtp pull-left"></div>',
+        'brandLabel' => '<div><img src="/img/logoBLTC.png" class="logoNavbar"><img src="/img/logoAtpFondo.png" class="logoNavbarAtp pull-left"></div>',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-default navbar-fixed-top',
         ],
     ]);
     echo Nav::widget([
+        'encodeLabels'=>false,
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
-            ['label' => 'Inicio', 'url' => ['/site/index']],
-            ['label' => 'Canchas', 'url' => ['/site/canchas']],
-            '<li><a data-toggle="modal" data-target="#modal" style="cursor: pointer;">Buscar jugadores</a></li>',
-            '<li><a data-toggle="modal" data-target="#modalPartido" style="cursor: pointer;">Buscar partidos</a></li>',
+            ['label' => FAS::i('home').' Inicio', 'url' => ['/site/index']],
+            ['label' => FAS::i('table-tennis').' Canchas', 'url' => ['/site/canchas']],
+            '<li><a data-toggle="modal" data-target="#modal" style="cursor: pointer;">'.FAS::i('users').' Buscar jugadores</a></li>',
+            '<li><a data-toggle="modal" data-target="#modalPartido" style="cursor: pointer;">'.FAS::i('baseball-ball').' Buscar partidos</a></li>',
 
         ],
     ]);
@@ -411,7 +412,7 @@ Modal::end();
 
 <footer class='footer'>
     <div class='container'>
-        <p class='pull-left'>&copy; Melo Emilio </p>
+        <p class='pull-left'>&copy; Melo Emilio - 2018</p>
     </div>
 </footer>
 

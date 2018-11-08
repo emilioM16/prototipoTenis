@@ -181,3 +181,23 @@ a.desc:after {
 .vs {
     margin-top: 150px;
 }
+
+.logoNavbar{
+    height: 40px;
+    width: 40px;
+    padding-top: 0px;
+}
+
+.logoNavbarAtp{
+    height: 40px;
+    width: 60px;
+}
+
+.navbar-brand{
+    padding-top: 5px !important;
+}
+
+.navbar
+{
+    border-bottom:2px solid #000;
+}

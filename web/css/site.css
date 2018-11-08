@@ -144,6 +144,7 @@ a.desc:after {
 }
 
 .fotoJumbo{
+    padding-top: 35px;
     text-align: center;
 }
 
@@ -179,4 +180,9 @@ a.desc:after {
 
 .navbar-brand{
     padding-top: 5px !important;
+}
+
+.navbar
+{
+    border-bottom:2px solid #000;
 }
