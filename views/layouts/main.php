@@ -378,10 +378,10 @@ Modal::end();
 <div class='wrap'>
     <?php
     NavBar::begin([
-        'brandLabel' => Yii::$app->name,
+        'brandLabel' => '<div><img src="img/logoBLTC.png" class="logoNavbar"><img src="img/logoAtpFondo.png" class="logoNavbarAtp pull-left"></div>',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
+            'class' => 'navbar-default navbar-fixed-top',
         ],
     ]);
     echo Nav::widget([

@@ -137,5 +137,9 @@ class SiteController extends Controller
         return $this->render('buscarPartidos');
     }
 
+    public function actionJuez(){
+        return $this->render('juez');
+    }
+
 
 }

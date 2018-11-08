@@ -54,7 +54,8 @@ $config = [
                 'jugadores'=>'site/jugadores',
                 'partidos'=> 'site/partidos',
                 'jugador'=> 'site/jugador',
-                'partido'=> 'site/partido'
+                'partido'=> 'site/partido',
+                'juez'=> 'site/juez'
             ],
         ],
     

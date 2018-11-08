@@ -208,7 +208,16 @@ $this->params['breadcrumbs'][] = $this->title;
                     </p>
                     <p>
                         <?php 
-                            echo FAS::i('user').' <b>Juez de silla: </b> ' 
+                            echo FAS::i('user'); 
+                            echo ' <b>Juez de silla: </b>';
+                            echo Html::a('Mohamed Lahyani',
+                                [
+                                  'juez',
+                                ],
+                                [
+                                  'class'=>'',
+                                ]);
+                                
                         ?>
                     </p>
                     <p><?php echo FAS::i('chart-line').' <b>Resultado:</b> '.$resu ?></p>
