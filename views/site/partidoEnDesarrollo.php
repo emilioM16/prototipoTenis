@@ -104,7 +104,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     </div>
                 </div>
                 <div class="col-lg-2 vs">
-                    <h1 class="text-center"> VS </h1>
+                    <h1 class="text-center"> vs. </h1>
                 </div>
                 <div class="col-lg-5 imagenJugadorPartido">
                     <div class="row">

@@ -32,7 +32,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         <div class="caption">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <h3>Juan Martín Del Potro - Stanislas Wawrinka</h3>
+                                    <h3>Juan Martín Del Potro vs. Stanislas Wawrinka</h3>
                                     <p><?php echo FAS::i('calendar-alt');?> <b>Fecha:</b> 09/03/2018</p>
                                     <p><?php echo FAS::i('clock');?> <b>Hora de inicio:</b> 13:00 </p>
                                     <p><?php echo FAS::i('clock');?> <b>Hora de finalización:</b> 17:00 </p>
@@ -69,7 +69,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         <div class="caption">
                             <div class="row">
                                 <div class="col-lg-6">                    
-                                    <h3>Roger Federer - Rafael Nadal</h3>
+                                    <h3>Roger Federer vs. Rafael Nadal</h3>
                                     <p><?php echo FAS::i('calendar-alt');?> <b>Fecha:</b>: 10/03/2018</p>
                                     <p><?php echo FAS::i('clock');?> <b>Hora de inicio:</b> 12:00 </p>
                                     <p><?php echo FAS::i('clock');?> <b>Hora de finalización:</b> 16:00 </p>
@@ -106,7 +106,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         <div class="caption">
                             <div class="row">
                                 <div class="col-lg-6">  
-                                    <h3>Guido Pella - Marin Čilić</h3>
+                                    <h3>Guido Pella vs. Marin Čilić</h3>
                                     <p><?php echo FAS::i('calendar-alt');?> <b>Fecha:</b> 12/03/2018</p>
                                     <p><?php echo FAS::i('clock');?> <b>Hora de inicio:</b> 09:00 </p>
                                     <p><?php echo FAS::i('clock');?> <b>Hora de finalización:</b>12:00 </p>
@@ -143,7 +143,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         <div class="caption">
                             <div class="row">
                                 <div class="col-lg-6">  
-                                    <h3>Dominic Thiem - Novak Djokovic</h3>
+                                    <h3>Dominic Thiem vs. Novak Djokovic</h3>
                                     <p><?php echo FAS::i('calendar-alt');?> <b>Fecha:</b> 15/03/2018</p>
                                     <p><?php echo FAS::i('clock');?> <b>Hora de inicio:</b> 10:00 </p>
                                     <p><?php echo FAS::i('clock');?> <b>Hora de finalización:</b> 13:00 </p>
